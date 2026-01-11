@@ -252,21 +252,22 @@ export default function Index() {
         </div>
 
         {/* Footer */}
-        <div className="w-full max-w-7xl flex flex-col md:flex-row items-end gap-12 md:gap-48 p-10 md:p-20 rounded-[22px] border border-[#262626] bg-gradient-to-b from-[#121212] to-[#1A1A1A]">
+        <div className="w-full flex flex-col md:flex-row items-start justify-center gap-12 md:gap-48 p-20 rounded-[22px] border border-[#262626] bg-gradient-to-b from-[#121212] to-[#1A1A1A]">
           <div className="flex flex-col items-start gap-5 max-w-md">
-            <p className="font-inter-tight text-lg font-medium leading-[150%] text-white">
-              The Pavyon template lets businesses show off their products with a really eye-catching design and a fun online experience.
-            </p>
             <div className="flex items-center gap-4">
               <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
                 <path d="M21.8015 15.4696C19.5464 13.216 19.224 10.0623 18.5198 7.09401H18.5045C18.2193 8.30233 17.8354 9.48831 17.559 10.6989C16.686 14.5338 14.613 16.9705 10.8115 17.9376C9.65105 18.1922 8.33488 18.4982 7.18104 18.7796C8.4643 19.1325 9.76512 19.4162 11.044 19.7825C13.8496 20.5888 16.0257 22.1299 16.9448 25.1116C18.1052 28.875 16.9492 32.118 13.7399 33.849C10.2367 35.7408 5.21337 35.3633 2.34852 32.1649C-0.237746 29.277 -0.889248 25.0959 1.41404 21.0846C4.60355 15.5299 7.74919 9.94841 10.9233 4.38478C14.2357 -1.42006 22.6306 -1.47366 25.9342 4.29768C29.3168 10.2053 32.809 16.0525 35.9897 22.0673C38.5168 26.8425 36.0468 32.5915 31.4248 34.3046C28.5929 35.3544 25.8092 35.2271 23.1747 33.8445C18.8379 31.5708 18.2434 25.3997 21.9067 21.9266C23.7055 20.2202 25.9825 19.7467 28.2375 19.1772C28.7771 19.041 29.3014 18.8466 29.8498 18.7528C27.0551 17.9108 23.9907 17.6607 21.7971 15.4696H21.8015Z" fill="white"/>
               </svg>
               <span className="font-inter-tight text-2xl font-semibold text-white">Atlas</span>
             </div>
+            <p className="font-inter-tight text-lg font-medium leading-[150%] text-white">
+              The Pavyon template lets businesses show off their products with a really eye-catching design and a fun online experience.
+            </p>
           </div>
 
-          <div className="flex items-end gap-12 md:gap-48">
+          <div className="flex items-start justify-center gap-12 md:gap-48">
             <div className="flex flex-col items-start gap-10">
+              <span className="font-inter-tight text-2xl font-medium text-white">Menu</span>
               <div className="flex flex-col items-start gap-5">
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Home</Link>
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">About</Link>
@@ -275,10 +276,10 @@ export default function Index() {
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Blogs</Link>
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Contact</Link>
               </div>
-              <span className="font-inter-tight text-2xl font-medium text-white">Menu</span>
             </div>
 
             <div className="flex flex-col items-start gap-10">
+              <span className="font-inter-tight text-2xl font-medium text-white">Utilities</span>
               <div className="flex flex-col items-start gap-5">
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Sign in</Link>
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Create an account</Link>
@@ -286,7 +287,6 @@ export default function Index() {
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Privacy Policy</Link>
                 <Link to="#" className="font-inter-tight text-lg font-medium text-[#999]">Terms and Condition</Link>
               </div>
-              <span className="font-inter-tight text-2xl font-medium text-white">Utilities</span>
             </div>
           </div>
         </div>
