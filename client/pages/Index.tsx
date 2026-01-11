@@ -231,32 +231,6 @@ export default function Index() {
         </p>
       </section>
 
-      {/* Collaborate Section */}
-      <section className="flex flex-col items-center gap-20 py-20 px-4 md:px-10 rounded-[32px] bg-gradient-to-b from-transparent to-white overflow-hidden my-10">
-        <div className="relative w-full max-w-6xl h-[339px] flex items-center justify-center">
-          <svg className="absolute" width="339" height="339" viewBox="0 0 339 339">
-            <circle cx="169.5" cy="169.5" r="146" fill="black" fillOpacity="0.02" stroke="#E6E6E6"/>
-            <circle cx="169.5" cy="169.5" r="169" fill="black" fillOpacity="0.02" stroke="#E6E6E6"/>
-            <rect x="45.5" y="44.5" width="249" height="249" rx="124.5" fill="black" fillOpacity="0.02" stroke="#E6E6E6"/>
-            <circle cx="170" cy="169" r="104.5" stroke="#CCCCCC"/>
-          </svg>
-          <svg className="absolute z-10" width="106" height="99" viewBox="0 0 106 99">
-            <path d="M62.4582 43.7569C55.9979 37.3824 55.074 28.462 53.0568 20.0659H53.0128C52.1958 23.4837 51.096 26.8384 50.3042 30.2625C47.803 41.1098 41.8642 48.0023 30.9734 50.7378C27.6489 51.458 23.8783 52.3235 20.5727 53.1195C24.2491 54.1177 27.9757 54.92 31.6395 55.9561C39.6773 58.2368 45.9114 62.5959 48.5446 71.0299C51.869 81.675 48.5571 90.8482 39.3631 95.7443C29.3269 101.095 14.9356 100.028 6.72819 90.9809C-0.681111 82.8122 -2.54758 70.9857 4.05104 59.6393C13.1886 43.9274 22.2004 28.1398 31.2939 12.4027C40.7833 -4.01674 64.8337 -4.16837 74.298 12.1563C83.9886 28.8663 93.9933 45.4058 103.106 62.419C110.345 75.926 103.269 92.1875 90.0279 97.0331C81.9147 100.002 73.9398 99.6423 66.3922 95.7317C53.968 89.3004 52.2649 71.8449 62.7599 62.021C67.9131 57.1944 74.4363 55.8551 80.8966 54.2441C82.4426 53.8587 83.9446 53.3091 85.5157 53.0437C77.5093 50.662 68.73 49.9544 62.4456 43.7569H62.4582Z" fill="black"/>
-          </svg>
-          <img src="https://api.builder.io/api/v1/image/assets/TEMP/0467341421c2d847b58dff6ee197fed5756593c5?width=576" alt="" className="absolute left-0 w-72 h-64" />
-          <img src="https://api.builder.io/api/v1/image/assets/TEMP/ba6feb8ff2f4246d6f73e794dd512a9d87b33768?width=576" alt="" className="absolute right-0 w-72 h-64" />
-        </div>
-
-        <div className="flex flex-col items-center gap-5 max-w-4xl">
-          <h2 className="text-center font-inter-tight text-4xl md:text-5xl lg:text-6xl font-semibold leading-[100%] tracking-[-0.025em] bg-gradient-to-b from-black to-[#333] bg-clip-text text-transparent">
-            A New Way to Run Compute
-          </h2>
-          <p className="max-w-[646px] text-center font-inter-tight text-lg md:text-xl font-medium leading-[140%] text-black">
-            Compute shouldn't require choosing providers or managing failures. Work as a team around outcomes, not infrastructure — submit jobs, share workloads, and rely on guarantees instead of guesswork.
-          </p>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="flex flex-col items-center gap-16 py-20 px-4 md:px-10 rounded-[32px] bg-cover bg-center bg-[#121212] overflow-hidden my-10" style={{ backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/8d3ea67259f0ca31e920a54537772406d4071a7a?width=2800')" }}>
         <div className="flex flex-col items-center gap-10">
