@@ -232,15 +232,15 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="flex flex-col items-center gap-16 py-20 px-4 md:px-10 rounded-[32px] bg-cover bg-center bg-[#121212] overflow-hidden my-10" style={{ backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/8d3ea67259f0ca31e920a54537772406d4071a7a?width=2800')" }}>
+      <section className="flex flex-col items-center gap-16 py-20 px-2 md:px-10 pt-20 pb-2.5 rounded-[32px] bg-cover bg-center bg-[#121212] overflow-hidden my-10" style={{ backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/8d3ea67259f0ca31e920a54537772406d4071a7a?width=2800')" }}>
         <div className="flex flex-col items-center gap-10">
           <svg width="106" height="99" viewBox="0 0 106 99" fill="none">
             <path d="M62.4582 43.7569C55.9979 37.3824 55.074 28.462 53.0568 20.0659H53.0128C52.1958 23.4837 51.096 26.8384 50.3042 30.2625C47.803 41.1098 41.8642 48.0023 30.9734 50.7378C27.6489 51.458 23.8783 52.3235 20.5727 53.1195C24.2491 54.1177 27.9757 54.92 31.6395 55.9561C39.6773 58.2368 45.9114 62.5959 48.5446 71.0299C51.869 81.675 48.5571 90.8482 39.3631 95.7443C29.3269 101.095 14.9356 100.028 6.72819 90.9809C-0.681111 82.8122 -2.54758 70.9857 4.05104 59.6393C13.1886 43.9274 22.2004 28.1398 31.2939 12.4027C40.7833 -4.01674 64.8337 -4.16837 74.298 12.1563C83.9886 28.8663 93.9933 45.4058 103.106 62.419C110.345 75.926 103.269 92.1875 90.0279 97.0331C81.9147 100.002 73.9398 99.6423 66.3922 95.7317C53.968 89.3004 52.2649 71.8449 62.7599 62.021C67.9131 57.1944 74.4363 55.8551 80.8966 54.2441C82.4426 53.8587 83.9446 53.3091 85.5157 53.0437C77.5093 50.662 68.73 49.9544 62.4456 43.7569H62.4582Z" fill="white"/>
           </svg>
 
           <div className="flex flex-col items-center gap-5 max-w-2xl">
-            <h2 className="max-w-[626px] text-center font-inter-tight text-4xl md:text-5xl lg:text-[56px] font-semibold leading-[100%] tracking-[-0.025em] text-white">
-              Ready to Run Compute Without Lock-In or Guesswork?
+            <h2 className="max-w-[1425px] text-center font-inter-tight text-4xl md:text-5xl lg:text-[56px] font-semibold leading-[100%] tracking-[-0.025em] text-white">
+              Ready for Compute Without Lock-In or Guesswork?
             </h2>
             <p className="max-w-[455px] text-center font-inter-tight text-xl font-medium leading-[140%] text-white">
               Talk to the founder · Join as a design partner · Tell us about your workload
