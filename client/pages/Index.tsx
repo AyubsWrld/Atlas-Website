@@ -34,7 +34,7 @@ export default function Index() {
             </div>
             
             <button className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-[#212121] border-t-2 border-[#333] shadow-[0_-3px_0_0_#1A1A1A_inset,0_0_0_1px_#1A1A1A]">
-              <span style={{ display: "block", color: "rgb(255, 255, 255)", font: '500 14px/20px "Inter Tight", -apple-system, Roboto, Helvetica, sans-serif' }}>Preorder for $40</span>
+              <span style={{ display: "block", color: "rgb(255, 255, 255)", font: '500 14px/20px "Inter Tight", -apple-system, Roboto, Helvetica, sans-serif' }}>Join us today</span>
             </button>
           </nav>
 
@@ -56,7 +56,7 @@ export default function Index() {
         </div>
 
         {/* Dashboard Preview */}
-        <div className="relative w-full h-[728px] overflow-hidden px-4">
+        <div className="relative w-full h-[728px] overflow-hidden px-4 flex flex-col justify-center items-center">
           <div className="inline-flex flex-col items-center gap-2.5 p-2.5 rounded-[32px] border border-[#E4E7EC] bg-black/5 max-w-[1172px] mx-auto">
             <div className="w-full rounded-[25.6px] border-[0.8px] border-[#E4E7EC] bg-white overflow-hidden">
               <img 
@@ -85,7 +85,7 @@ export default function Index() {
       <section className="flex flex-col items-center gap-20 py-20 px-4 md:px-10 rounded-[32px] border border-[#F1F1F1] bg-gradient-to-b from-transparent via-white to-white/40 overflow-hidden my-10">
         <div className="flex flex-col items-center gap-5 max-w-4xl">
           <div className="flex items-center justify-center gap-2.5 px-4 py-4 rounded-lg border border-[#E4E7EC] bg-black/5">
-            <span className="font-inter-tight text-sm font-medium uppercase tracking-wide text-black">How It Works</span>
+            <span className="font-inter-tight text-sm font-bold uppercase tracking-wide text-black">How It Works</span>
           </div>
           <h2 className="text-center font-inter-tight text-4xl md:text-5xl lg:text-6xl font-semibold leading-[120%] tracking-[-0.025em] bg-gradient-to-b from-black to-[#333] bg-clip-text text-transparent">
             Compute, Treated Like a Utility.
