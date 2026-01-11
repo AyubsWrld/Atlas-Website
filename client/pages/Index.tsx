@@ -124,7 +124,6 @@ export default function Index() {
                   <span className="font-inter-tight text-sm font-medium text-white">Preorder for $40</span>
                 </button>
               </div>
-              <img src="https://api.builder.io/api/v1/image/assets/TEMP/c9da7aa9b3b031b3aca5293a13ff8e1509a28538?width=1843" alt="Metadata" className="w-full h-auto rounded-lg" />
             </div>
           </div>
         </div>
