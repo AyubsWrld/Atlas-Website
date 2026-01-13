@@ -1,0 +1,308 @@
+:root {
+  --d-elevation-one: #000000;
+  --d-elevation-two: #09090A;
+  --d-stroke: #1E1E20; 
+  --text-primary: black;
+  --text-secondary: black;
+}
+
+$smooth-ease: cubic-bezier(.28,1.04,0,.99) ; 
+.headerContainer {
+  position: sticky;
+  top: 32px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  min-width: 750px;
+  height: 60px;
+  padding: 0px 20px; 
+  margin: 0 auto;
+  
+  -webkit-backdrop-filter: blur(120px);
+  background-color: rgba(255, 255, 255, 1) ; 
+  opacity: 0.95;
+  border: 2px solid rgba(0, 0, 0 , 0.05);
+  border-radius: 8px;
+  
+
+  transition:
+    width 1s $smooth-ease,
+    justify-content 1s $smooth-ease,
+    padding 1s $smooth-ease,
+    background-color 1s $smooth-ease,
+    backdrop-filter 1s $smooth-ease,
+    border-radius 0.2s $smooth-ease; 
+  will-change: width, border-radius, padding;
+}
+
+.condensed {
+  width: 675px;
+  min-width: 675px;
+  border-radius: 999px;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  min-width: 0; 
+  transition: transform 1s $smooth-ease;
+  
+}
+
+.textLogo {
+  height: 26px;
+  margin-right: 12px ;
+  object-fit: contain;
+  transition: 
+    all 1s $smooth-ease,
+  
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: 40px;
+  
+  transition: 
+    all 1s $smooth-ease,
+    margin-left 1s $smooth-ease,
+    gap 1s $smooth-ease,
+    transform 1s $smooth-ease;
+  
+  &.navigationCondensed {
+    margin-left: 24px;
+    gap: 24px;
+    transform: translateX(-12px);
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans"; 
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap; 
+  
+  transition: 
+    color 0.3s $smooth-ease,
+    transform 0.3s $smooth-ease;
+  
+  &:hover {
+    color: var(--text-primary);
+    transform: translateY(-1px);
+  }
+  
+  .condensed & {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.chevron {
+  color: var(--text-secondary);
+  transition: 
+    transform 0.3s $smooth-ease, 
+    color 0.3s $smooth-ease;
+}
+
+.navLink:hover .chevron {
+  color: var(--text-primary);
+  transform: rotate(180deg);
+}
+
+.newBadge {
+  color: rgba(0, 0, 0, 0.9 );
+  font-family: "Plus Jakarta Sans" ; 
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border-style : solid ; 
+  border-width : 1px; 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  transition: 
+    transform 0.3s $smooth-ease;
+  
+  .condensed & {
+    transform: scale(0.9);
+  }
+}
+
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  
+  transition: 
+    gap 1s $smooth-ease,
+    margin-left 1s $smooth-ease;
+  
+  .condensed & {
+    gap: 8px;
+    margin-left: 0px;
+  }
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 6px;
+  
+  transition: 
+    all 0.3s $smooth-ease,
+    color 0.3s $smooth-ease,
+    background-color 0.3s $smooth-ease,
+    transform 0.4s $smooth-ease,
+    width 0.4s $smooth-ease;
+  
+  &:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-1px) scale(1.05);
+  }
+  
+  &.iconHidden {
+    transform: scale(0.8) translateX(20px);
+    width: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
+
+.purchaseButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--text-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans" ; 
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  
+  transition:
+    background-color 0.3s $smooth-ease,
+    padding 0.3s $smooth-ease;
+  
+  &:hover {
+    background: #F4F4F5;
+    color: black;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+  }
+  
+  
+  .condensed & {
+    font-size: 13px;
+    border-radius: 999px;
+    padding: 6px 12px; 
+  }
+}
+
+.arrow {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .headerContainer {
+    width: 95%;
+    padding: 0px 16px;
+    
+    &.condensed {
+      width: 85%;
+      padding: 0px 12px;
+    }
+  }
+  
+  .navigation {
+    gap: 20px;
+    margin-left: 20px;
+    
+    &.navigationCondensed {
+      gap: 16px;
+      margin-left: 16px;
+      transform: translateX(-8px);
+    }
+  }
+  
+  .navLink {
+    font-size: 13px;
+    
+    .condensed & {
+      font-size: 12px;
+    }
+  }
+  
+  .rightActions {
+    gap: 8px;
+    
+    .condensed & {
+      gap: 4px;
+    }
+  }
+  
+  .purchaseButton {
+    padding: 6px 12px;
+    font-size: 13px;
+    
+    .condensed & {
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--d-stroke) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--d-stroke);
+  border-radius: 3px;
+}
+
+
+

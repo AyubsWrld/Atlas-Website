@@ -12,6 +12,10 @@ export default defineConfig(({ mode }) => ({
       allow: ["./", "./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
+    watch: {
+      usePolling: true,
+      interval: 300 
+    }
   },
   build: {
     outDir: "dist/spa",
@@ -22,7 +26,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./client"),
       "@shared": path.resolve(__dirname, "./shared"),
     },
-  },
+  }
 }));
 
 function expressPlugin(): Plugin {
